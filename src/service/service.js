@@ -2,11 +2,9 @@ const weatherService = {
 
     getCoords: async (city) => {
 
-        console.log(city)
-
         if (city === "") {
 
-            const res = await fetch(`https://ip-api.com/json/`);
+            const res = await fetch(`https://ipapi.co/json`);
 
             if (!res.ok) {
                 throw new Error(`Couldn't fetch location`)
