@@ -40,8 +40,8 @@ function App() {
     weatherService.getCoords(city)
     .then(data =>  {
           setCoords({
-            lat: data.latitude,
-            lon: data.longitude
+            lat: data.lat,
+            lon: data.lon
           })
 
       weatherService.getNewWeather(coords.lat, coords.lon)

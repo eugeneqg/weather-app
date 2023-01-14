@@ -10,7 +10,7 @@ const weatherService = {
                 throw new Error(`Couldn't fetch location`)
             }
     
-            return await res.json()
+            return await res.json().then(data => {return {lon: data.longitude, lat: data.latitude}})
 
         } else {
             const res = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=cc9bd7b27324369a7212f78944e8937f`);
