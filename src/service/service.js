@@ -6,7 +6,7 @@ const weatherService = {
 
         if (city === "") {
 
-            const res = await fetch(`http://ip-api.com/json/`);
+            const res = await fetch(`https://ip-api.com/json/`);
 
             if (!res.ok) {
                 throw new Error(`Couldn't fetch location`)
@@ -15,7 +15,7 @@ const weatherService = {
             return await res.json()
 
         } else {
-            const res = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=cc9bd7b27324369a7212f78944e8937f`);
+            const res = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=cc9bd7b27324369a7212f78944e8937f`);
 
             if (!res.ok) {
                 throw new Error(`Couldn't fetch location`)
