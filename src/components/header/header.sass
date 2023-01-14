@@ -1,0 +1,49 @@
+.navbar
+    background-color: rgba(255, 255, 255, 0.4)
+    backdrop-filter: blur(20px)
+    margin-bottom: 4%
+
+.search
+    position: relative
+    width: 32px
+    height: 32px
+    background: rgba(255, 255, 255, 0.7)
+    backdrop-filter: blur(20px)
+
+    cursor: pointer
+
+    border-radius: 20px
+    transition: all linear 0.1s
+
+    img
+        position: absolute
+        top: 8px
+        left: 8px
+        width: 16px
+
+.opened
+    width: 192px
+
+.search-input
+    visibility: hidden
+    position: absolute
+
+    top: 0
+    right:0
+
+    border-radius: 20px
+
+    width: 32px
+    height: 32px
+    background-color: transparent
+    border: none
+    transition: all linear 0.1s
+
+    &:focus
+        outline: none
+
+.open-input
+    visibility: visible
+    width: 160px
+    display: block
+    

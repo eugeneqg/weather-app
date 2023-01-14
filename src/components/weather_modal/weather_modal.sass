@@ -1,0 +1,180 @@
+.weather-info 
+    padding: 0
+    width: 100%
+    height: 638px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    gap: 20px
+
+    @media (max-width: 767px)
+      width: 100%
+
+.row
+
+    @media (max-width: 767px)
+      width: 100%
+    
+.right-col
+    width: 540px
+    height: 400px
+    background: linear-gradient(154.4deg, rgba(255, 255, 255, 0.6) 3.79%, rgba(255, 255, 255, 0.186) 83.8%)
+    backdrop-filter: blur(20px)
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    padding: 20px
+
+    border-radius: 16px
+
+    @media (max-width: 767px)
+        justify-content: center
+        gap: 12px
+        padding: 20px
+        height: auto
+
+.left-col
+    width: 400px
+    height: 400px
+    background-color: green
+    background: linear-gradient(154.4deg, rgba(255, 255, 255, 0.6) 3.79%, rgba(255, 255, 255, 0.186) 83.8%)
+    backdrop-filter: blur(20px)
+
+    border-radius: 16px
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    @media (max-width: 767px)
+      width: 100%
+
+    img
+        display: block
+        width: 200px
+        margin-top: 20px
+        filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.1))
+
+    .main-weather
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: 800
+        font-size: 100px
+        margin-top: -40px
+
+        color: #38364F
+
+    .city
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+
+        color: #38364F
+
+        margin-bottom: 40px
+
+.bottom
+    width: 960px
+    height: 218px
+    background: linear-gradient(154.4deg, rgba(255, 255, 255, 0.6) 3.79%, rgba(255, 255, 255, 0.186) 83.8%)
+    backdrop-filter: blur(20px)
+
+    border-radius: 16px
+
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 20px
+
+    @media (max-width: 767px)
+
+        padding: 20px
+        width: 100%
+        height: auto
+        flex-wrap: wrap
+
+.spinner 
+    margin-top: 20px
+    margin-bottom: 20px
+
+.cel 
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 52px
+
+    color: #38364F  
+
+.bl
+    width: 240px
+    height: 170px
+
+    box-sizing: border-box
+    padding: 20px 24px
+
+    display: flex
+    align-items: center
+    position: relative
+
+    background: rgba(255, 255, 255, 0.7)
+    backdrop-filter: blur(20px)
+
+    margin: 0
+
+    border-radius: 16px
+
+    @media (max-width: 767px)
+        height: 120px
+        width: 100%
+
+    img
+        width: 48px
+        // margin-left: 24px
+
+.bl-text-content
+    margin-left: 24px
+
+    span
+        font-size: 18px
+        font-weight: 500
+        
+
+.bl-header
+    font-family: "Avenir", sans-serif
+    font-weight: 500
+    font-size: 20px
+    margin: 0px 0px 2px 0px
+    color: #38364F
+
+.bl-text
+    margin: 0
+
+    position: relative
+
+    font-family: "Avenir", sans-serif
+    font-weight: 900
+    font-size: 28px
+    color: #38364F
+
+    sup
+        position: absolute
+        top: 16px
+        left: 40px
+        font-size: 18px
+        font-weight: 500
+
+.bl-descr
+    position: absolute
+    bottom: 20px
+    left: 0
+
+    width: 100%
+
+    font-size: 12px
+    font-weight: 500
+
+    text-align: center
+    margin: 0px
